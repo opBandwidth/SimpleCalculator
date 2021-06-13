@@ -6,16 +6,16 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Console.Write("select an operation - add, subtract, divide, multiply: ");
-            string operation = Console.ReadLine();
+            Console.Write("select an operation - add, subtract, divide, multiply: "); // the console text
+            string operation = Console.ReadLine(); // read the operation from the console
 
-            Console.Write("first number: ");
-            float number1 = Convert.ToInt16(Console.ReadLine());
+            Console.Write("first number: "); // the first number
+            float number1 = Convert.ToInt16(Console.ReadLine()); // convert the number to an 16 bit int
 
-            Console.Write("second number: ");
-            float number2 = Convert.ToInt16(Console.ReadLine());
+            Console.Write("second number: "); // the second number
+            float number2 = Convert.ToInt16(Console.ReadLine()); // convert the number to an 16 bit int
 
-            switch(operation)
+            switch(operation) // switch operation: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch
             {
                 case "add":
                     Console.WriteLine(number1 + number2);
